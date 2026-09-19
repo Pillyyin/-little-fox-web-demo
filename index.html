@@ -4,9 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | 小狐狸下樓梯</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #231F20;
+      }
+      #unity-canvas {
+        width: 100vmin;
+        height: 100vmin;
+        display: block;
+        margin: 0 auto;
+      }
+  </style>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1024 height=1024 tabindex="-1" style="width: 1024px; height: 1024px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=1024 height=1024 tabindex="-1"></canvas>
     <script src="Build/WebGLBuild.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
